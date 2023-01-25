@@ -5,7 +5,7 @@ import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 import MovieDetails from "./MovieDetails";
 //90470516
-const API_URL = "http://www.omdbapi.com?apikey=90470516";
+const API_URL = "https://www.omdbapi.com?apikey=90470516";
 
 // const movie1 = {
 //   Title: "The Godfather",
