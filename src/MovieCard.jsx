@@ -1,5 +1,7 @@
 import React from "react";
 
+import MovieDetails from "./MovieDetails";
+
 const MovieCard = ({ movie }) => {
   return (
     <div className="movie">

@@ -1,18 +1,20 @@
 import { React, useEffect, useState } from "react";
+
 import "./App.css";
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
+import MovieDetails from "./MovieDetails";
 //90470516
 const API_URL = "http://www.omdbapi.com?apikey=90470516";
 
-const movie1 = {
-  Title: "The Godfather",
-  Year: "1972",
-  imdbID: "tt0068646",
-  Type: "movie",
-  Poster:
-    "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
-};
+// const movie1 = {
+//   Title: "The Godfather",
+//   Year: "1972",
+//   imdbID: "tt0068646",
+//   Type: "movie",
+//   Poster:
+//     "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+// };
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -23,6 +25,7 @@ const App = () => {
 
     setMovies(data.Search);
   };
+
   useEffect(() => {
     searchMovies("Godfather");
   }, []);
